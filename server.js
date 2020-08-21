@@ -22,15 +22,15 @@ let waitList = []; // unlimited
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "home.html"));
+  res.sendFile(path.join(__dirname, "./Assets/index.html"));
 });
 
 app.get("/tables", (req, res) => {
-  res.sendFile(path.join(__dirname, "tables.html"));
+  res.sendFile(path.join(__dirname, "./Assets/tables.html"));
 });
 
 app.get("/reserve", (req, res) => {
-  res.sendFile(path.join(__dirname, "reserve.html"));
+  res.sendFile(path.join(__dirname, "./Assets/reservations.html"));
 });
 
 // Displays json variables
